@@ -19,8 +19,7 @@ SUPERVISOR_PARAMS='-c /etc/supervisord.conf'
 if test -t 0; then
   supervisord $SUPERVISOR_PARAMS
   while true; do
-    # echo "Exit supervisorctl with Ctrl-D. Detach with Ctrl-P + Ctrl-Q."
-    # supervisorctl $SUPERVISOR_PARAMS
+    echo "Welcome to Polinux/CentOS 7. Have Fun!"
     echo "Exit shell with Ctrl-D. Detach with Ctrl-P + Ctrl-Q."
     export PS1='[\u@\h : \w]\$ '
     bash
