@@ -1,8 +1,8 @@
 ### Centos 7 Docker with REMI and EPEL Repos
 
-Epel Vrsion 7.1
+EPEL Version = CentOS offical version (yum install epel-release)
 
-Remi 7 
+REMI 7.0.1 
 
 System Packages installed:
 
