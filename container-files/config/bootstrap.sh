@@ -6,8 +6,8 @@ set -e
 # as container might start with /data mounted from another data-container).
 mkdir -p /data/run /data/logs
 
-if [ "$(ls -A /install/init)" ]; then
-  for init in /install/init/*.sh; do
+if [ "$(ls /config/init/)" ]; then
+  for init in /config/init/*.sh; do
     . $init
   done
 fi
@@ -19,7 +19,8 @@ SUPERVISOR_PARAMS='-c /etc/supervisord.conf'
 if test -t 0; then
   supervisord $SUPERVISOR_PARAMS
   while true; do
-    echo "Welcome to Polinux/CentOS 7. Have Fun!"
+    # echo "Exit supervisorctl with Ctrl-D. Detach with Ctrl-P + Ctrl-Q."
+    # supervisorctl $SUPERVISOR_PARAMS
     echo "Exit shell with Ctrl-D. Detach with Ctrl-P + Ctrl-Q."
     export PS1='[\u@\h : \w]\$ '
     bash
