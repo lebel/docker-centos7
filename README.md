@@ -1,14 +1,8 @@
 # CentOS-7 with supervisord launcher
 
-<<<<<<< HEAD
-EPEL Version = CentOS offical version (yum install epel-release)
-
-REMI 7.0.1 
-=======
 This is a CentOS-7 Docker [million12/centos-supervisor](https://registry.hub.docker.com/u/million12/centos-supervisor/) image, perfect in case when you need to launch more then one process inside a container. This image is based on official [centos:centos7](https://registry.hub.docker.com/_/centos/) and it adds only ca. 20MB on top of it.
 
 Things included:
->>>>>>> devel
 
 ##### - init scripts
 
