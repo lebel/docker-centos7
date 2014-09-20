@@ -9,8 +9,7 @@ RUN \
   yum clean all && \
 
   easy_install supervisor && \
-  mkdir -p /etc/supervisord.d /var/log/supervisor
-
+  
 # Add supervisord conf, bootstrap.sh files
 ADD container-files /
 

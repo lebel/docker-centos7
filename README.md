@@ -11,7 +11,7 @@ Add your .sh scripts to `/config/init` to have them executed when container star
 ##### - supervisord
 
 Just add you supervisord config(s) to `/etc/supervisor.d/` directory to launch your service. For example in your `Dockerfile` you could put:  
-```ADD my-supervisord-service.conf /etc/supervisord.d/my-supervisord-service.conf```
+```ADD my-supervisord-service.conf /etc/supervisor.d/my-supervisord-service.conf```
 
 Learn more about about [supervisord inside containers on official Docker documentation](https://docs.docker.com/articles/using_supervisord/).
 
