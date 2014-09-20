@@ -8,7 +8,7 @@ RUN \
   yum update -y && \
   yum clean all && \
 
-  easy_install supervisor && \
+  easy_install supervisor 
   
 # Add supervisord conf, bootstrap.sh files
 ADD container-files /
